@@ -10,7 +10,7 @@
     padding: 15px 50px;
     border: 1px solid #dbdbdb;
     width: 80%;
-    height: 75%;
+    height: 75vmin;
     margin: 90px auto;
     border-radius: 10px;
     box-shadow: 0 10px 10px #9b9b9b;
@@ -23,11 +23,15 @@
   margin-top: 60px;
 }
   
-  .article-con img {
-    width: 360px;
+  .profile-item img {
+    width: 45vmin;
     border-radius: 10px;
     margin-bottom: 10px;
     object-fit: cover;
+  }
+
+  .profile-item {
+ 
   }
 
   .img-card {
@@ -63,6 +67,7 @@
     padding: 20px;
     margin-right: 5%;
     text-align: justify;
+    overflow: auto;
   }
   
   .description-item h2 {
@@ -114,12 +119,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 8vh;
   background-color: #F4F3F3;
   border-bottom: 1px solid #dbdbdb;
   padding: 0 20px;
-  font-weight: bold;
   margin: auto -8px;
+}
+
+nav li a {
+  font-weight: bold;
 }
 
 nav ul {
@@ -152,7 +160,7 @@ nav li {
 }
 
 nav .logo {
-  width: 9%;
+  width: 9vh;
   padding: 10px 25
  }
  
