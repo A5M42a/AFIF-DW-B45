@@ -1,3 +1,5 @@
+/* css reset */
+
 /*index*/
 
 * {
@@ -6,100 +8,98 @@
 }
 
 .article-con {
-    display: flex;
-    padding: 15px 50px;
-    border: 1px solid #dbdbdb;
-    width: 80%;
-    height: 75vmin;
-    margin: 90px auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 10px #9b9b9b;
-    background-color: white;
+  display: flex;
+  padding: 30px 50px;
+  border: 1px solid #dbdbdb;
+  width: 80%;
+  height: 80vmin;
+  margin: 90px auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px #9b9b9b;
+  background-color: white;
+}
 
-  }
-
-.fa-sharp, span {
+.fa-sharp,
+span {
   color: #000;
   margin-top: 60px;
 }
-  
-  .profile-item img {
-    width: 45vmin;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    object-fit: cover;
-  }
 
-  .profile-item {
- 
-  }
+.profile-item {
+  padding-top: 20px;
+}
 
-  .img-card {
-    text-align: center; 
-    border: 1px solid #dbdbdb; 
+.profile-item img {
+  width: 45vmin;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
 
-    margin: 10px auto; 
-    border-radius: 10px; 
-    box-shadow: 0 10px 30px #9c9c9c;
+.img-card {
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  margin: 10px auto;
+  padding-bottom: 5%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px #9c9c9c;
+}
 
-  }
+.img-card h2 {
+  margin: 0;
+}
 
-    .img-card h2 {
-        margin: 0;
-    }
-    
-    .img-card p {
-        color: grey;
-        margin: 0px;
-    }
+.img-card p {
+  color: grey;
+  margin: 0px;
+}
 
-    .fa-brands {
-      margin-top: 100px;
-      border-radius: 100%;
-      background: #111727;
-      padding: 12px 16px;
-      font-size: 20px;
-      color: #fff;
-    }
-  
-  .description-item {
-    margin-top: 50px;
-    padding: 20px;
-    margin-right: 5%;
-    text-align: justify;
-    overflow: auto;
-  }
-  
-  .description-item h2 {
-    font-size: 30px;
-    margin: 0 0 10px;
-  }
-  
-  .description-item p {
-    font-size: 20px;
-    margin: 0 0 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .description-item button {
-    background-color: #111727;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .description-item a {
-    margin-left: 10px;
-  }
-  
-  .social-media a {
-    margin-right: 10px;
-    color: #111727;
-  }
-  
+.fa-brands {
+  margin-top: 100px;
+  border-radius: 100%;
+  background: #111727;
+  padding: 12px 16px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.description-item {
+  margin-top: 50px;
+  padding: 30px;
+  margin-right: 5%;
+  text-align: justify;
+  overflow: auto;
+}
+
+.description-item h2 {
+  font-size: 4vmin;
+  margin: 0;
+}
+
+.description-item p {
+  margin: 0;
+  font-size: 2.7vmin;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.description-item button {
+  background-color: #111727;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.description-item a {
+  margin-left: 10px;
+}
+
+.social-media a {
+  margin-right: 10px;
+  color: #111727;
+}
 
 /*contact-form*/
 
@@ -109,21 +109,20 @@ form h2 {
 }
 
 body {
-    background-color: #DCE0E4;
+  background-color: #dce0e4;
 }
 
 /* navbar */
 /* navigation bar */
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 8vh;
-  background-color: #F4F3F3;
+  background-color: #f4f3f3;
   border-bottom: 1px solid #dbdbdb;
   padding: 0 20px;
-  margin: auto -8px;
+  margin: -8px -8px;
 }
 
 nav li a {
@@ -161,20 +160,18 @@ nav li {
 
 nav .logo {
   width: 9vh;
-  padding: 10px 25
- }
- 
-
+  padding: 10px 25;
+}
 
 /* contact form */
 form {
-    width: 350px;
-    margin: 50px auto;
-    padding: 10px;
+  width: 350px;
+  margin: 50px auto;
+  padding: 10px;
 }
 
 form div {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 form div button {
@@ -182,33 +179,33 @@ form div button {
 }
 
 label {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 input,
 select,
 textarea {
-    width: 100%;
-    background-color: #FFFFFF;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 15px;
-    border: 1px solid #dbdbdb;
-    border-radius: 5px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 button {
-    color: white;
-    background-color: #111727;
-    padding: 10px 25px;
-    font-size: 15px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 10px;
-    cursor: pointer;
+  color: white;
+  background-color: #111727;
+  padding: 10px 25px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
 }
