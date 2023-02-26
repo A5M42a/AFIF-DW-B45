@@ -34,59 +34,68 @@ function getData(event) {
 }
 
 function showData() {
-  const container = document.querySelector(".container-project");
-  container.innerHTML = "";
+  document.querySelector(".container-project").innerHTML = "";
 
-  for (const data of datas) {
-    const nodejsIcon = data.pronodejs
-      ? `<div class="icon"><i class="fa-brands fa-node-js fa-2x"></i></div>`
-      : "";
-    const reactjsIcon = data.proreactjs
-      ? `<div class="icon"><i class="fa-brands fa-react fa-2x"></i></div>`
-      : "";
-    const nextjsIcon = data.pronextjs
-      ? `<div class="icon"><i class="fa-brands fa-golang fa-2x"></i></div>`
-      : "";
-    const typescriptIcon = data.protypescript
-      ? `<div class="icon"><i class="fa-brands fa-square-js fa-2x"></i></div>`
-      : "";
+  // Looping use (for Loop) for show Card Project
+  for (let i = 0; i < datas.length; i++) {
+    document.querySelector(".container-project").innerHTML += `
+  <div class="list-project" >
+    <img src="${datas[i].proimage}" />
+    <a href="projectDetail.html" class="title-content">
+      <h3>${datas[i].proname}</h3>
+    </a>
 
-    const html = `
-      <div class="list-project">
-        <img src="${data.proimage}" />
-        <a href="projectDetail.html" class="title-content">
-          <h3>${data.proname}</h3>
-        </a>
+    <div class="title-durasi">
+      <p>Durasi : 3 Bulan</p>
+    </div>
 
-        <div class="title-durasi">
-          <p>Durasi : 3 Bulan</p>
-        </div>
+    <div class="desc-content">
+      <p>
+      ${datas[i].prodesc}
+      </p>
+    </div>
 
-        <div class="desc-content">
-          <p>
-            ${data.prodesc}
-          </p>
-        </div>
+    <div class="cont-icons">
+    ${
+      datas[i].pronodejs
+        ? `<div class="icon">
+    <i class="fa-brands fa-node-js fa-2x"></i>
+  </div>`
+        : ""
+    }
+  ${
+    datas[i].proreactjs
+      ? `<div class="icon">
+    <i class="fa-brands fa-react fa-2x"></i>
+  </div>`
+      : ""
+  }
+  ${
+    datas[i].pronextjs
+      ? `<div class="icon">
+    <i class="fa-brands fa-golang fa-2x"></i>
+  </div>`
+      : ""
+  }
+  ${
+    datas[i].protypescript
+      ? `<div class="icon">
+    <i class="fa-brands fa-square-js fa-2x"></i>
+  </div>`
+      : ""
+  }
+    </div>
 
-        <div class="cont-icons">
-          ${nodejsIcon}
-          ${reactjsIcon}
-          ${nextjsIcon}
-          ${typescriptIcon}
-        </div>
-
-        <div class="cont-btn">
-          <div class="btn-edit">
-            <button type="button">Edit</button>
-          </div>
-
-          <div class="btn-delete">
-            <button type="button">Delete</button>
-          </div>
-        </div>
+    <div class="cont-btn">
+      <div class="btn-edit">
+        <button type="button">Edit</button>
       </div>
-    `;
 
-    container.insertAdjacentHTML("beforeend", html);
+      <div class="btn-delete">
+        <button type="button">Delete</button>
+      </div>
+    </div>
+  </div>
+      `;
   }
 }
