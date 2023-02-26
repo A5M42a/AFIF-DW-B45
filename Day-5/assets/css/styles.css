@@ -101,7 +101,7 @@ form h2 {
 }
 
 body {
-  background-color: #dce0e4;
+  background-color: #e3e7eb;
   padding: 0;
   margin: 0;
 }
@@ -248,6 +248,31 @@ input[type="file"] {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+#input-upload {
+  position: relative;
+  overflow: hidden;
+}
+
+#input-upload::before {
+  content: "Choose";
+  display: inline-block;
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: #cdcccd;
+  color: #b2abab;
+  margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#input-upload::after {
+  content: url(assets/images/file.png) "";
+}
+
+#input-upload::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
 input[type="file"] {
   position: relative;
   overflow: hidden;
@@ -257,9 +282,9 @@ input[type="file"] {
   color: transparent;
 }
 
-input[type="file"]::-webkit-file-upload-button {
-  background: #e4e4e4;
-  color: gray;
+/*input[type="file"]::-webkit-file-upload-button {
+  background: #cdcccd;
+  color: #b2abab;
   padding: 10px 15px;
   border-radius: 5px;
   border: none;
@@ -267,10 +292,7 @@ input[type="file"]::-webkit-file-upload-button {
   font-weight: bold;
   margin: 0;
   cursor: pointer;
-}
-
-.upload-cont {
-}
+} */
 
 /* Project Content */
 
@@ -315,7 +337,7 @@ input[type="file"]::-webkit-file-upload-button {
 
 .list-project {
   background-color: #fff;
-  width: 25%;
+  width: 380px;
   border: 1px solid #dbdbdb;
   margin: 20px;
   padding: 15px;
@@ -337,4 +359,11 @@ input[type="file"]::-webkit-file-upload-button {
 .checkbox-grid p {
   font-weight: 500;
   font-size: large;
+}
+
+.upload-cont img {
+  position: relative;
+  left: 320px;
+  bottom: 30px;
+  transform: rotate(30deg);
 }
